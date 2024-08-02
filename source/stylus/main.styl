@@ -1,0 +1,97 @@
+@font-face
+  font-family: "Cormorant-Bold"
+  src: url('../fonts/Cormorant-Bold.woff'), url('../fonts/Cormorant-Bold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Cormorant-Italic"
+  src: url('../fonts/Cormorant-Italic.woff'), url('../fonts/Cormorant-Italic.woff2')
+  font-display: swap
+@font-face
+  font-family: "Cormorant-LightItalic"
+  src: url('../fonts/Cormorant-LightItalic.woff'), url('../fonts/Cormorant-LightItalic.woff2')
+  font-display: swap
+@font-face
+  font-family: "Cormorant-Medium"
+  src: url('../fonts/Cormorant-Medium.woff'), url('../fonts/Cormorant-Medium.woff2')
+  font-display: swap
+
+@font-face
+  font-family: "Roboto-Bold"
+  src: url('../fonts/Roboto-Bold.woff'), url('../fonts/Roboto-Bold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-ExtraLightItalic"
+  src: url('../fonts/Roboto-ExtraLightItalic.woff'), url('../fonts/Roboto-ExtraLightItalic.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-Italic"
+  src: url('../fonts/Roboto-Italic.woff'), url('../fonts/Roboto-Italic.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-Light"
+  src: url('../fonts/Roboto-Light.woff'), url('../fonts/Roboto-Light.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-Medium"
+  src: url('../fonts/Roboto-Medium.woff'), url('../fonts/Roboto-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-MediumItalic"
+  src: url('../fonts/Roboto-MediumItalic.woff'), url('../fonts/Roboto-MediumItalic.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-Regular"
+  src: url('../fonts/Roboto-Regular.woff'), url('../fonts/Roboto-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-SemiBold"
+  src: url('../fonts/Roboto-SemiBold.woff'), url('../fonts/Roboto-SemiBold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Roboto-SemiBoldItalic"
+  src: url('../fonts/Roboto-SemiBoldItalic.woff'), url('../fonts/Roboto-SemiBoldItalic.woff2')
+  font-display: swap
+
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+body
+  margin: 0 auto
+  font-size: 18px
+  font-family: "Roboto-Light"
+  font-weight: 300
+  line-height: 120%
+  color $color-white
+
+.layout
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  overflow-x: hidden
+
+.main
+  flex: 1
+
+.wrapper
+  max-width: 320px
+  margin: 0 auto
+  padding: 0 6px
+  width 100%
+  +above($breakpoints.sm)
+    max-width: 750px
+    padding: 0 12px
+  +above($breakpoints.md)
+    max-width: 996px
+    padding: 0 15px
+  +above($breakpoints.xxl)
+    padding: 0 20px
+    max-width: 1220px
+
+
+
+
+

@@ -1,0 +1,75 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-64.font-w-c-medium.text-up
+        | О франшизе
+        br
+        | в цифрах
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48 49 дней
+            .finances-section__card-text.font-s-20 займет открытие <br> студии
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48
+              | 58,5 
+              span.font-w-extra-light-i %
+            .finances-section__card-text.font-s-20 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48
+              | от 355 000 
+              span.font-w-extra-light-i ₽
+            .finances-section__card-text.font-s-20 размер ежемесячной <br> выручки
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48
+              | 1 700 000 
+              span.font-w-extra-light-i ₽
+            .finances-section__card-text.font-s-20 минимальный <br> размер вложений
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48 10 месяцев
+            .finances-section__card-text.font-s-20 средний срок <br> окупаемости
+          .finances-section__card.swiper-slide
+            .finances-section__lines
+              .finances-section__line-gold
+              .finances-section__line-grey
+            .font-w-italic.font-s-48
+              | от 210 000 
+              span.font-w-extra-light-i ₽
+            .finances-section__card-text.font-s-20 размер ежемесячной <br> прибыли
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .finances-section__bottom-left
+          .finances-section__bottom-title.font-w-c-medium.font-s-32.text-up
+            | Хотите получить 
+            br.no-br
+            | детальные расчеты для 
+            br.no-br
+            | вашего города и под 
+            br.no-br
+            | ваш бюджет?
+          .finances-section__bottom-text.font-s-20
+            | Скачайте финансовую модель
+            br.no-br
+            | «PROOBRAZ»
+        .finances-section__bottom-right
+          form.finances-section__form(data-feedback-form)
+            input.input.input--bg-grey.finances-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.input--bg-grey.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            input.input.input--bg-grey.finances-item(type="text" name="email" autocomplete="off" placeholder="e-mail@mail.ru")
+            button.btn.finances-item(type="submit") Скачать
+      img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="760" height="1032" alt="image")

@@ -1,0 +1,66 @@
+.about-section
+  background-image: url('../images/about-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #A08F64
+
+  &__container
+    text-align: center
+    z-index 1
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 60px 0 80px 0
+    +above($breakpoints.md)
+      padding 80px 0 100px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 153px 0
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 35px 0
+    +above($breakpoints.xxl)
+      padding 0 0 40px 0
+
+  &__text
+    line-height 115%
+
+  &__img
+    width 300px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width: 420px;
+      bottom: 0;
+      right: -150px;
+    +above($breakpoints.md)
+      width: 600px;
+      right: -230px;
+    +above($breakpoints.xxl)
+      width: 776px;
+      right: -275px;
+
+
+  &__img-bg
+    position: absolute
+    z-index -1
+    width 300px
+    height: auto
+    bottom: 0
+    left: 0
+    +above($breakpoints.sm)
+      width: 420px;
+      left: 367px;
+    +above($breakpoints.md)
+      width: 600px;
+      left: 445px;
+    +above($breakpoints.xxl)
+      width: 824px;
+      left: 473px;

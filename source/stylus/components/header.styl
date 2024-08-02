@@ -1,0 +1,42 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      text-align: center
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 130px
+    +above($breakpoints.md)
+      width 140px
+    +above($breakpoints.xxl)
+      width 152px
+
+  &__connection
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    gap: 11px
+
+  &__connection-phone
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      cursor pointer
+      text-decoration: underline
+      color: #ffffff60

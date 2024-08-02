@@ -1,0 +1,122 @@
+.input
+  height: 50px
+  width 100%
+  padding: 0 28px;
+  font-family: "Roboto-Regular"
+  font-weight: 400
+  font-size: 16px;
+  line-height: 140%
+  color: #ffffff60
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 95px;
+  background: rgba(255, 255, 255, 0.1)
+  position relative
+
+  &.active
+    .input__progress
+      opacity 1
+      min-width: 40px
+      span
+        opacity 1
+  &__progress
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    background: #323232;
+    opacity 0
+    min-width: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 16px
+    transition: min-width 1s, opacity 0.8s
+    color: $color-white
+    font-weight: bold
+    border-radius: 8px
+    +above($breakpoints.xxl)
+      font-size: 20px
+      line-height: 20px
+    span
+      opacity 0
+      transition: 2s
+
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s
+  &:hover
+    border 1px solid $color-gold
+  &:focus
+    color: $color-white
+    caret-color: #A48D53
+    border 1px solid $color-gold
+    box-shadow: 3px 3px 20px 0px $color-gold
+    ::placeholder
+      color: #ffffff60
+  &::placeholder
+    color: #ffffff60
+  +above($breakpoints.sm)
+    height: 55px
+    font-size: 17px;
+  +above($breakpoints.md)
+    font-size: 18px;
+    height: 60px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    background-color transparent
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--textarea
+    outline none
+    padding: 23px 34px
+    resize: none
+    height: 120px
+    color: #000
+    background-color: #fff
+    &:focus
+      color: #000
+      caret-color: $color-sky
+      border 1px solid $color-sky
+      box-shadow: 3px 3px 20px 0px $color-sky
+      ::placeholder
+        color: #000
+    &::placeholder
+      color: #000
+    +above($breakpoints.sm)
+      height: 120px
+    +above($breakpoints.md)
+      height: 120px
+
+  &--bg-grey
+    color: #20201E60
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 95px;
+    background: rgba(62, 62, 62, 0.1)
+    &:hover
+      border 1px solid rgba(255, 255, 255, 0.1);
+    &:focus
+      color: #20201E
+      caret-color: #A48D53
+      border 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 3px 3px 20px 0px $color-gold
+      ::placeholder
+        color: #20201E60
+    &::placeholder
+      color: #20201E60
+
+

@@ -1,0 +1,32 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__header-wrapper
+        include ../components/header.pug
+      .main-section__box
+        .main-section__line
+        h1.main-section__title.font-w-light.font-s-36
+          | Зарабатывайте 
+          br
+          span.mark-gold.font-w-medium-i от 210 000 рублей 
+          br
+          | ежемесячно
+      .main-section__sub-title.font-w-c-medium.font-s-64.text-up
+        | на популярных 
+        br
+        | и востребованных 
+        br
+        | бьюти-услугах
+
+      .main-section__bottom
+        .main-section__text.font-s-20
+          | Получите пошаговый план открытия 
+          br
+          | вашей собственной студии эстетики 
+          br
+          | тела и лица по франшизе «PROOBRAZ»
+        form.main-section__form(data-feedback-form)
+          input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.main-item(type="submit") Получить план
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1072" height="951" alt="image")

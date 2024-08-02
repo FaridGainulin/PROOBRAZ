@@ -1,0 +1,28 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-c-medium.font-s-64.text-up
+        | Откройте студию эстетики 
+        br.no-br
+        | тела и лица по франшизе 
+        br.no-br
+        | «PROOBRAZ»
+      .city-section__box
+        .city-section__box-text
+          .city-section__line
+          .city-section__sub-title.font-s-36
+            | и получайте 
+            br
+            span.mark-gold.font-w-medium-i от 210 000 рублей
+            br
+            | чистой прибыли 
+            br
+            | ежемесячно
+        .city-section__box-form
+          .font-s-20.text-center Проверьте, свободен <br> ли ваш город для работы
+          form.city-section__form(data-feedback-form)
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Проверить
+      .city-section__footer-wrapper
+      include ../components/footer.pug

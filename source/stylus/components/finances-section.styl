@@ -1,0 +1,154 @@
+.finances-section
+  background-color #fff
+
+  &__container
+    color: #1F1F1D
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0 30px 0
+    +above($breakpoints.md)
+      padding 80px 0 70px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 90px 0
+
+  &__title
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 50px
+    +above($breakpoints.xxl)
+      padding-bottom 60px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content space-between
+      flex-wrap: wrap
+      column-gap: 20px
+      row-gap: 20px
+      width 476px
+      padding-left 248px
+    +above($breakpoints.md)
+      row-gap: 40px
+      width 580px
+      padding-left 386px
+    +above($breakpoints.xxl)
+      padding-left 500px
+      width 680px
+      column-gap: 120px
+      row-gap: 50px
+
+  &__card
+    width 280px !important
+    height: 100px
+    display: flex
+    flex-direction: column
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      height: 115px
+      width 228px !important
+    +above($breakpoints.md)
+      height: 139px
+      width 280px !important
+
+  &__lines
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom 21px
+
+  &__line-gold
+    width 100px
+    height: 3px
+    background-color #A48D53
+
+  &__line-grey
+    width 100%
+    max-width: 180px
+    height: 1px
+    background-color #E1E1E1
+
+  &__card-text
+    padding-top 16px
+    color: #6C6C6C
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 20px
+    +above($breakpoints.sm)
+      padding-top 30px
+      flex-direction: row
+      align-items: flex-start
+      justify-content center
+    +above($breakpoints.md)
+      align-items: flex-end
+      justify-content start
+      padding-top 50px
+      gap: 30px
+    +above($breakpoints.xxl)
+      padding-top 65px
+      gap: 88px
+
+  &__bottom-left
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__bottom-title
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+
+  &__bottom-right
+    +above($breakpoints.md)
+      width 574px
+    +above($breakpoints.xxl)
+      width 574px
+
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 8px
+    +above($breakpoints.md)
+      flex-direction: row
+      flex-wrap: wrap
+    +above($breakpoints.xxl)
+      column-gap: 14px
+      row-gap: 16px
+
+  &__img
+    width 300px
+    height: auto
+    margin 20px auto 0
+    border-radius: 5px
+    +above($breakpoints.sm)
+      position: absolute
+      margin 0
+      top: 138px
+      left: 0
+      width 228px
+    +above($breakpoints.md)
+      width 366px
+      top: 261px
+    +above($breakpoints.xxl)
+      top: 317px
+      border-radius: 0
+      width 380px
+
+.finances-item
+  width 250px
+  +above($breakpoints.sm)
+    width 280px
+
+
