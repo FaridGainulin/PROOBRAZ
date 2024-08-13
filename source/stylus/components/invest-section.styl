@@ -20,7 +20,7 @@
       padding 0 0 5px 0
     +above($breakpoints.md)
       padding 0 0 5px 0
-    +above($breakpoints.xxl)
+    
       padding 0 0 5px 0
 
   &__box
@@ -32,9 +32,13 @@
     +above($breakpoints.sm)
       flex-direction: row-reverse
       justify-content space-between
+    +above($breakpoints.xxl)
+      justify-content flex-start
 
   &__box-text
     width 621px
+    +above($breakpoints.xxl)
+      width 680px
 
   &__cards
     +above($breakpoints.sm)
@@ -43,6 +47,8 @@
       flex-wrap: wrap
       row-gap: 8px
       column-gap: 20px
+    +above($breakpoints.xxl)
+      column-gap: 152px
 
   &__card
     position relative
