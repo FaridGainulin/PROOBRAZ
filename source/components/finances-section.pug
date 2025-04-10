@@ -68,6 +68,7 @@ section.finances-section
             | «Your PROOBRAZ»
         .finances-section__bottom-right
           form.finances-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
             input.input.input--bg-grey.finances-item(type="text" name="name" autocomplete="off" placeholder="Имя")
             input.input.input--bg-grey.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
             input.input.input--bg-grey.finances-item(type="text" name="email" autocomplete="off" placeholder="e-mail@mail.ru")

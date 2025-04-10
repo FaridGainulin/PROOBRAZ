@@ -1,8 +1,8 @@
 section.main-section
+  .main-section__header-wrapper
+    include ../components/header.pug
   .wrapper
     .main-section__container
-      .main-section__header-wrapper
-        include ../components/header.pug
       .main-section__box
         .main-section__line
         h1.main-section__title.font-w-light.font-s-36
@@ -26,6 +26,7 @@ section.main-section
           br
           | тела и лица по франшизе «Your PROOBRAZ»
         form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
           input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
           input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
           button.btn.main-item(type="submit") Получить план

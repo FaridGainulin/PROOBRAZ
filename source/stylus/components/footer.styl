@@ -1,9 +1,12 @@
 .footer
   &__container
     display: flex
-    flex-direction: row
+    flex-direction: column
     align-items: center
-    justify-content space-between
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
 
   &__title
     display: none
@@ -21,22 +24,14 @@
     +above($breakpoints.xxl)
       width 152px
 
-  &__connection
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    gap: 11px
-
-  &__connection-phone
-    display: flex
-    flex-direction: row
-    align-items: center
-    gap: 15px
+  &__privacy-mobile
+    cursor pointer
+    text-decoration: underline
+    color: #ffffff60
+    +above($breakpoints.sm)
+      display: none
 
   &__call-me
-    display: none
-    +above($breakpoints.sm)
-      display: block
-      cursor pointer
-      text-decoration: underline
-      color: #ffffff60
+    cursor pointer
+    text-decoration: underline
+    color: #ffffff60

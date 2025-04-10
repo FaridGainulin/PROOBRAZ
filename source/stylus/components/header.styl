@@ -4,6 +4,7 @@
     flex-direction: row
     align-items: center
     justify-content space-between
+    padding-top 12px
 
   &__title
     display: none
@@ -34,9 +35,15 @@
     gap: 15px
 
   &__call-me
-    display: none
+    cursor pointer
+    text-decoration: underline
+    color: #ffffff60
+
+  &__brand-mobile
+    text-align: center
+    backdrop-filter: blur(36px);
+    background: rgba(0, 0, 0, 0.3);
+    padding 7px 0
+    margin-bottom 3px
     +above($breakpoints.sm)
-      display: block
-      cursor pointer
-      text-decoration: underline
-      color: #ffffff60
+      display: none

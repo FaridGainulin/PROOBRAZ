@@ -8,7 +8,6 @@ function initSwiperFinances() {
       type: 'progressbar',
     },
     updateOnWindowResize: true,
-    // loop: true,
     spaceBetween: 20,
     breakpoints: {
       200: {
@@ -48,7 +47,6 @@ function initSwiperPresent() {
       type: 'progressbar',
     },
     updateOnWindowResize: true,
-    // loop: true,
     spaceBetween: 20,
     breakpoints: {
       200: {
@@ -88,7 +86,6 @@ function initSwiperStart() {
       type: 'progressbar',
     },
     updateOnWindowResize: true,
-    // loop: true,
     spaceBetween: 20,
     breakpoints: {
       200: {
@@ -128,7 +125,6 @@ function initSwiperInvest() {
       type: 'progressbar',
     },
     updateOnWindowResize: true,
-    // loop: true,
     spaceBetween: 20,
     breakpoints: {
       200: {
@@ -157,52 +153,6 @@ function initSwiperInvest() {
     },
   })
 }
-
-
-// let swiperInstance = null;
-
-// function initSwiperDesktop() {
-//   if (swiperInstance) swiperInstance.destroy(true, true);
-
-//   const screenWidth = window.innerWidth;
-//   const isDesktop = screenWidth >= 1400;
-
-//   swiperInstance = new Swiper('.swiper-desktop', {
-//     speed: 450,
-//     effect: isDesktop ? 'slide' : 'coverflow',
-//     loop: isDesktop,
-//     rewind: !isDesktop,
-//     autoplay: isDesktop ? {
-//       delay: 4000,
-//       disableOnInteraction: false,
-//     } : false,
-//     navigation: isDesktop ? {
-//       nextEl: '.button-next',
-//       prevEl: '.button-prev',
-//     } : false,
-//     pagination: {
-//       el: '.desktop-pagination',
-//       type: 'bullets',
-//       clickable: true,
-//     },
-//     slidesPerView: isDesktop ? 3 : 1,
-//     spaceBetween: 20,
-//     slideToClickedSlide: true,
-//     coverflowEffect: {
-//       rotate: isDesktop ? 0 : 60,
-//       stretch: isDesktop ? 0 : 14,
-//       depth: isDesktop ? 0 : 500,
-//       scale: isDesktop ? 0 : 0.7,
-//       modifier: isDesktop ? 0 : 1,
-//       slideShadows: false,
-//     },
-//     allowTouchMove: true,
-//   });
-// }
-
-// window.addEventListener('resize', initSwiperDesktop);
-// document.addEventListener('DOMContentLoaded', initSwiperDesktop);
-
 
 function initSwiperDesktop2() {
   const swiper = new Swiper('.swiper-desktop', {
@@ -250,5 +200,4 @@ $(document).ready(function () {
   initSwiperStart()
   initSwiperInvest()
   initSwiperDesktop2()
-  // initSwiperDesktop()
 })

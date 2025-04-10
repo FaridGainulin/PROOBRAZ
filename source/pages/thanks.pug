@@ -2,11 +2,9 @@ extends ../layouts/base
 
 block body
     .layout.thanks-page
-      .header-thanks-wrapper
-        .wrapper
-          include ../components/header-thanks.pug
+      .main-section__header-wrapper
+        include ../components/header.pug
       main.main
         include ../components/thanks-section.pug
-      .footer-thanks-wrapper
-        .wrapper
-          include ../components/footer-thanks.pug
+      .city-section__footer-wrapper
+        include ../components/footer.pug
